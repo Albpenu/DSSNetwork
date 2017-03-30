@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Realizado por Juan Alberto Peña Núñez-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOundtrack (your OST repository!)</title>
+    <link rel="shortcut icon" href="rsc/img/icono.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquerybootstrap.js"></script>
+</head>
+
+<body>
+    <div id="logo">
+        <img src="rsc/img/logo/LOGO%20DEFINITIVO6.png" width="100%" />
+    </div>
+    <img src="rsc/img/logo/quill2.png" style="width: 75%; position: absolute; right: 0px; top: 0px;">
+    <form action="#novedades" style="float: right; position: relative; font-size: 20px; font-family: 'Verdana'; ">
+        <input id="buscador" type="text" />
+        <input type="button" value="Buscar" />
+    </form>
+    <img src="rsc/img/logo/tinta2.png" style="position: static; width: 15%;">
+    <img src="rsc/img/logo/machas1.PNG" class="mancha" style="left:25%; position: absolute; width: 20%; top: 0px;">
+    <img src="rsc/img/logo/manchas2.PNG" class="mancha" style="width: 15%; position: static; top: 30%; float: left;">
+    <img src="rsc/img/logo/manchas2.PNG" class="mancha" style="right:0px; width: 20%; position: absolute; top: 0px;">
+
+    <!--Menú-->
+    <div class="container">
+        <a id="secciones" role="button">
+            <div id="menu">
+                <nav>
+
+                    <div id="menu">
+                        <div class="secciones" id="padre1" style="cursor:pointer">
+                            <div id="uno">
+                                <a href="index.html" id="ini" data-toggle="tooltip" title="Inicio">
+                                    <div class="option">
+                                        <img src="rsc/img/notas/Inicio.png" />
+                                    </div>
+                                </a>
+                                <div id="textoseccion1" class="textoseccion">
+                                    <p>Inicio</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="secciones" id="padre1" style="cursor:pointer">
+                            <div id="dos">
+                                <a href="#catálogo" id="catalogo" data-toggle="tooltip" data-placement="top" title="Catálogo">
+                                    <div class="option">
+                                        <img src="rsc/img/notas/Cat%C3%A1logo.png" />
+                                    </div>
+                                </a>
+                                <div id="textoseccion2" class="textoseccion">
+                                    <p>Catálogo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secciones" id="padre1" style="cursor:pointer">
+                            <div id="tres">
+
+                                <a href="#acceso" id="acc" title="Acceso" data-toggle="modal" data-target="#login-modal">
+                                    <div class="option">
+                                        <img src="rsc/img/notas/acceso.png" />
+                                    </div>
+                                </a>
+                                <div id="textoseccion3" class="textoseccion">
+                                    <p>Acceso</p>
+                                </div>
+                                <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content ui-draggable ui-draggable-handle">
+                                            <div class="modal-header" align="center">
+                                                <img src="rsc/img/logo/LOGO%20DEFINITIVO5.png" width="400px">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                </button>
+                                            </div>
+                                            <div id="div-forms">
+                                                <form id="login-form">
+                                                    <div class="modal-body">
+                                                        <div id="div-login-msg">
+                                                            <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                                            <span id="text-login-msg" style="font-size: 40px;">Escribe tu usuario y contraseña</span>
+                                                        </div>
+                                                        <input id="login_username" class="form-control" type="text" placeholder="Escribe tu nombre de usuario" style="font-size: 40px; height: 45px;" required>
+                                                        <input id="login_password" class="form-control" type="password" style="font-size: 30px; height: 40px;" placeholder="Introduce tu contraseña" required>
+                                                        <div class="checkbox">
+                                                            <label style="background-color: transparent;">
+                                                                <input type="checkbox">Recuérdame
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <div>
+                                                            <button type="submit" class="btn btn-primary btn-lg btn-block" style="font-size: 40px; color: black; background-color: white;">Acceder</button>
+                                                        </div>
+                                                        <div>
+                                                            <button id="login_lost_btn" type="button" class="btn btn-link" style="font-size: 40px; color: black;">He perdido mi contraseña...</button>
+                                                            <button id="login_register_btn" type="button" class="btn btn-link" style="font-size: 40px; color: black;">Registrarse</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <form id="lost-form" style="display:none;">
+                                                    <div class="modal-body">
+                                                        <div id="div-lost-msg">
+                                                            <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                                            <span id="text-lost-msg" style="font-size: 40px;">Escribe tu email</span>
+                                                        </div>
+                                                        <input id="lost_email" class="form-control" type="text" placeholder="Introduce tu email" required>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <div>
+                                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                                                        </div>
+                                                        <div>
+                                                            <button id="lost_login_btn" type="button" class="btn btn-link" style="font-size: 40px;">Acceder</button>
+                                                            <button id="lost_register_btn" type="button" class="btn btn-link">Registrarse</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <form id="register-form" style="display:none;">
+                                                    <div class="modal-body">
+                                                        <div id="div-register-msg">
+                                                            <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                                            <span id="text-register-msg">Registrar una cuenta</span>
+                                                        </div>
+                                                        <input id="register_username" class="form-control" type="text" placeholder="Nombre de usuario" required>
+                                                        <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                                                        <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <div>
+                                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar</button>
+                                                        </div>
+                                                        <div>
+                                                            <button id="register_login_btn" type="button" class="btn btn-link" style="font-size: 30px;" style="font-size: 40px;">Acceder</button>
+                                                            <button id="register_lost_btn" type="button" class="btn btn-link" style="font-size: 40px;">He perdido la contraseña...</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secciones" id="padre1" style="cursor:pointer">
+                            <div id="cuatro">
+                                <a href="#comu" id="comunidad" data-toggle="tooltip" title="Comunidad">
+                                    <div class="option">
+                                        <img src="rsc/img/notas/orquesta.png" />
+                                    </div>
+                                </a>
+                                <div id="textoseccion4" class="textoseccion">
+                                    <p>Comunidad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </a>
+    </div>
+    <!--FIN MENÚ-->
+
+    <!--Catálogo-->
+    <div>
+        <label id="hazclick" style="position: fixed; right: 10%; width: 100px; z-index: 100; border-radius: 50px; padding-left: 5px;"><u>Menú</u></label>
+        <div id="contenido">
+            <div class="texto">
+                <h1 id="texto1">Ultimas incorporaciones:</h1>
+            </div>
+            <div id="novedades">
+
+                <div class="padre" id="padre11" style="cursor:pointer">
+                    <span class="obra">
+                <p>
+                "Inception (Origen)"<br>
+                Hans Zimmer
+                </p>
+            </span>
+                    <div id="hijo1" class="hijo">
+                        <a class="option">
+                            <img class="imagen" id="img1" src="rsc/img/inception_cinemagraph_by_imustbedead-d5s6se1.gif" title="Origen" />
+                        </a>
+                    </div>
+                    <div class="flecha" id="flecha1">
+                        <img class="flechaabajo" src="rsc/img/desplegable/desplegar.gif" />
+                        <img class="flechaarriba" src="rsc/img/desplegable/plegar.gif" />
+                    </div>
+                </div>
+
+
+                <div id="desplegable1">
+                    <img id="disco1" class="disco" src="rsc/img/discos/inception.png" />
+                    <div id="mp3_player">
+                        <div id="audio_box">
+                            <audio id="time">
+                                <source src="rsc/music/Time-Hans_Zimmer.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <canvas id="analyser_render"></canvas>
+                    </div>
+                    <a id="galeria1" href="galeria.html" target="_blank" style="float: left; position: relative; font-size: 100px;">
+                        Galería<br>
+                    </a>
+
+                </div>
+
+                <div class="padre" id="padre22" style="cursor:pointer">
+                    <span class="obra" id="obra2">
+                        <p>
+                        "La naranja mecánica" 
+                        <br>
+                        Wendy Carlos
+                        </p>
+                    </span>
+                    <div id="hijo2" class="hijo">
+                        <a class="option">
+                            <img onclick="fimg2()" data-toggle="modal" data-target="#myModal2" class="imagen" id="img2" src="rsc/img/clockwork-orange.gif" title="La naranja mecánica" />
+                        </a>
+                    </div>
+                    <div class="flecha" id="flecha2">
+                        <img class="flechaabajo" src="rsc/img/desplegable/desplegar.gif" />
+                        <img class="flechaarriba" src="rsc/img/desplegable/plegar.gif" />
+                    </div>
+                </div>
+
+                <div class="desplegable" id="desplegable2">
+                    <img id="disco2" class="disco" src="rsc/img/discos/clock.jpg" />
+                    <div id="audio_box">
+                        <audio id="naranja">
+                            <source src="rsc/music/naranja-mecanica.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <a id="galeria1" href="galeria2.html" target="_blank" style="float: left; position: relative; font-size: 100px;">
+                        Galería<br>
+                    </a>
+                </div>
+
+                <div class="padre" id="padre33" style="cursor:pointer">
+                    <span class="obra" id="obra3">
+                <p>
+                "Batman. El caballero oscuro"
+                <br>
+                Hans Zimmer
+                </p>
+            </span>
+                    <div id="hijo3" class="hijo">
+                        <a class="option">
+                            <img onclick="fimg3()" data-toggle="modal" data-target="#myModal3" class="imagen" id="img3" src="rsc/img/dark-knight.gif" title="Batman. El caballero oscuro" />
+                        </a>
+                    </div>
+                    <div class="flecha" id="flecha3">
+                        <img class="flechaabajo" src="rsc/img/desplegable/desplegar.gif" />
+                        <img class="flechaarriba" src="rsc/img/desplegable/plegar.gif" />
+                    </div>
+                </div>
+
+                <div class="desplegable" id="desplegable3">
+                    <div style="position: relative; height: 400px; width: 400px; float: left;">
+                        <img id="disco3" class="disco" src="rsc/img/discos/batman.png" />
+                        <div id="audio_box">
+                            <audio id="batman">
+                                <source src="rsc/music/caballerooscurobso-borjacastillejofernandosamperiz-ivoox12890615.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <a id="galeria1" href="galeria3.html" target="_blank" style="float: left; position: absolute; font-size: 100px;">
+                        Galería<br>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="padre" id="padre44" style="cursor:pointer"> <span class="obra">
+                <p>
+                "2001: Una odisea del espacio" 
+                <br>
+                Strauss
+                </p>
+            </span>
+                    <div id="hijo4" class="hijo">
+                        <a class="option">
+                            <img onclick="fimg4()" data-toggle="modal" data-target="#myModal3" class="imagen" id="img4" src="rsc/img/kubrick-cinemagraphs-2001-space-odyssey-1.gif" title="2001: Odisea en el espacio" />
+                        </a>
+                    </div>
+                    <div class="flecha" id="flecha4">
+                        <img class="flechaabajo" src="rsc/img/desplegable/desplegar.gif" />
+                        <img class="flechaarriba" src="rsc/img/desplegable/plegar.gif" />
+                    </div>
+                </div>
+
+                <div class="desplegable" id="desplegable4">
+                    <div style="position: relative; height: 400px; width: 400px; float: left;">
+                        <img id="disco4" class="disco" src="rsc/img/discos/2001.png" />
+                        <div id="audio_box">
+                            <audio id="odisea">
+                                <source src="rsc/music/2001%20A%20Space%20Odyssey%20Theme%20song.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <a id="galeria1" href="galeria4.html" target="_blank" style="float: left; position: absolute; font-size: 100px;">
+                        Galería<br>
+                    </a>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: center; font-size: 100px;">Tú, melómano, síguenos! A qué estás esperando?</h1>
+    <iframe id="comu" src="contact.html"></iframe>
+
+    <footer>
+        <div class="pie">
+            <p>"Mucho de lo que hacemos es efímero y fácil de olvidar, incluso por nosotros mismos.</p>
+            <p>
+            </p>
+            <p>Por ello es gratificante haber hecho algo que resuene en la memoria de las personas"</p>
+            <p>— John Williams —</p>
+        </div>
+    </footer>
+
+    <script>
+        //MOSTRAR y OCULTAR EL DIV CON TEXTO DE CADA SECCIÓN MANTENIENDO EL CLICK (LO HE PENSADO PARA MÓVILES; YA QUE EL HOVER EN ELLOS NO FUNCIONA)
+        $("div.textoseccion").hide();
+        var presionar;
+        $("a#ini").mouseleave(function() {
+            $("a#ini > div.option > img").show();
+            $("div#textoseccion1").fadeOut(500);
+            clearTimeout(presionar);
+            return false;
+        }).mousedown(function() {
+            presionar = window.setTimeout(function() {
+                $("a#ini > div.option > img").hide();
+                $("div#textoseccion1").fadeIn(100);
+            }, 100);
+            return false;
+        });
+
+         //
+        $("a#catalogo").mouseleave(function() {
+            $("a#catalogo > div.option > img").show();
+            $("div#textoseccion2").fadeOut(500);
+            clearTimeout(presionar);
+            return false;
+        }).mousedown(function() {
+            presionar = window.setTimeout(function() {
+                $("a#catalogo > div.option > img").hide();
+                $("div#textoseccion2").fadeIn(100);
+            }, 100);
+            return false;
+        });
+
+         //
+        $("a#acc").mouseleave(function() {
+            $("a#acc > div.option > img").show();
+            $("div#textoseccion3").fadeOut(500);
+            clearTimeout(presionar);
+            return false;
+        }).mousedown(function() {
+            presionar = window.setTimeout(function() {
+                $("a#acc > div.option > img").hide();
+                $("div#textoseccion3").fadeIn(100);
+            }, 100);
+            return false;
+        });
+
+         //
+        $("a#comunidad").mouseleave(function() {
+            $("a#comunidad > div.option > img").show();
+            $("div#textoseccion4").fadeOut(500);
+            clearTimeout(presionar);
+            return false;
+        }).mousedown(function() {
+            presionar = window.setTimeout(function() {
+                $("a#comunidad > div.option > img").hide();
+                $("div#textoseccion4").fadeIn(100);
+            }, 100);
+            return false;
+        });
+    </script>
+
+    <script>
+        //ACORDEÓN
+        $("div#novedades > div:nth-child(2)").hide();
+        $("div#novedades > div:nth-child(4)").hide();
+        $("div#novedades > div:nth-child(6)").hide();
+        $("div#novedades > div:last-child").hide();
+
+        $("div#flecha1 > img.flechaabajo").show();
+        $("div#flecha1 > img.flechaarriba").hide();
+        $("div#flecha2 > img.flechaabajo").show();
+        $("div#flecha2 > img.flechaarriba").hide();
+        $("div#flecha3 > img.flechaabajo").show();
+        $("div#flecha3 > img.flechaarriba").hide();
+        $("div#flecha4 > img.flechaabajo").show();
+        $("div#flecha4 > img.flechaarriba").hide();
+
+        $("div#novedades > div:first-child").click(function() {
+            $("div#novedades > div:first-child").addClass("focus11");
+            $("div#novedades > div:nth-child(2)").animate({
+                height: "toggle"
+            }, 1500);
+
+            $("div#novedades > div:nth-child(4)").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#novedades > div:nth-child(6)").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#novedades > div:last-child").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#flecha1 > img.flechaabajo").toggle();
+            $("div#flecha1 > img.flechaarriba").toggle();
+
+            $("div#flecha2 > img.flechaabajo").show();
+            $("div#flecha3 > img.flechaabajo").show();
+            $("div#flecha4 > img.flechaabajo").show();
+
+            $("div#flecha4 > img.flechaarriba").hide();
+            $("div#flecha2 > img.flechaarriba").hide();
+            $("div#flecha3 > img.flechaarriba").hide();
+        });
+
+        $("div#novedades > div:nth-child(3)").click(function() {
+            $("div#novedades > div:nth-child(3)").addClass("focus22");
+            $("div#novedades > div:nth-child(4)").animate({
+                height: "toggle"
+            }, 1500);
+
+            $("div#novedades > div:nth-child(2)").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#novedades > div:nth-child(6)").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#novedades > div:last-child").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#flecha2 > img.flechaabajo").toggle();
+            $("div#flecha2 > img.flechaarriba").toggle();
+
+            $("div#flecha1 > img.flechaabajo").show();
+            $("div#flecha3 > img.flechaabajo").show();
+            $("div#flecha4 > img.flechaabajo").show();
+
+            $("div#flecha4 > img.flechaarriba").hide();
+            $("div#flecha1 > img.flechaarriba").hide();
+            $("div#flecha3 > img.flechaarriba").hide();
+        });
+
+        $("div#novedades > div:nth-child(5)").click(function() {
+            $("div#novedades > div:nth-child(5)").addClass("focus33");
+            $("div#novedades > div:nth-child(6)").animate({
+                height: "toggle"
+            }, 1500);
+
+            $("div#novedades > div:nth-child(2)").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#novedades > div:nth-child(4)").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#novedades > div:last-child").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#flecha3 > img.flechaabajo").toggle();
+            $("div#flecha3 > img.flechaarriba").toggle();
+
+            $("div#flecha2 > img.flechaabajo").show();
+            $("div#flecha1 > img.flechaabajo").show();
+            $("div#flecha4 > img.flechaabajo").show();
+
+            $("div#flecha4 > img.flechaarriba").hide();
+            $("div#flecha2 > img.flechaarriba").hide();
+            $("div#flecha1 > img.flechaarriba").hide();
+        });
+
+        $("div#novedades > div:nth-child(7)").click(function() {
+            $("div#novedades > div:nth-child(7)").addClass("focus44");
+            $("div#novedades > div:last-child").animate({
+                height: "toggle"
+            }, 1500);
+
+            $("div#novedades > div:nth-child(2)").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#novedades > div:nth-child(4)").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#novedades > div:nth-child(6)").animate({
+                height: "hide"
+            }, 1500);
+
+            $("div#flecha4 > img.flechaabajo").toggle();
+            $("div#flecha4 > img.flechaarriba").toggle();
+
+            $("div#flecha2 > img.flechaabajo").show();
+            $("div#flecha3 > img.flechaabajo").show();
+            $("div#flecha1 > img.flechaabajo").show();
+
+            $("div#flecha1 > img.flechaarriba").hide();
+            $("div#flecha2 > img.flechaarriba").hide();
+            $("div#flecha3 > img.flechaarriba").hide();
+        });
+    </script>
+
+    <script>
+        try {
+            window.localStorage.setItem('google_pub_config', '{"sraConfigs":{"1":{"sraTimeout":10000},"2":{"sraTimeout":10000}}}');
+        } catch (e) {}
+    </script>
+
+    <script>
+        //Para reproductor y analizador de barras de sonido:
+         //DISCO 1
+        $(document).ready(function() {
+            var context;
+            window.addEventListener('load', init, false);
+
+            function init() {
+                try {
+                    window.AudioContext = window.AudioContext || window.webkitAudioContext;
+                    context = new AudioContext();
+                } catch (e) {
+                    alert('Esta API de audio no está soportada por este navegador, ¡así que cambia a otro navegador (como Chrome) si quieres disfrutar del sensual movimiento de estas barras al ritmo de estas geniales BSOs!');
+                }
+            }
+            var audio = document.getElementById("time");
+            audio.controls = true;
+            audio.loop = true;
+            audio.autoplay = false;
+
+            var canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_width, bar_height;
+
+            window.addEventListener("load", initMp3Player, false);
+
+            function initMp3Player() {
+                document.getElementById("audio_box").appendChild(audio);
+
+                analyser = context.createAnalyser();
+                canvas = document.getElementById("analyser_render");
+                ctx = canvas.getContext("2d");
+
+                source = context.createMediaElementSource(audio);
+                source.connect(analyser);
+                analyser.connect(context.destination);
+                frameLooper();
+            }
+
+            function frameLooper() {
+
+                var requestAnimationFrame = window.requestAnimationFrame(frameLooper) ||
+                    window.webkitRequestAnimationFrame(frameLooper) ||
+                    window.mozRequestAnimationFrame(frameLooper) ||
+                    window.oRequestAnimationFrame(frameLooper) ||
+                    window.msRequestAnimationFrame(frameLooper);
+
+                fbc_array = new Uint8Array(analyser.frequencyBinCount);
+                analyser.getByteFrequencyData(fbc_array);
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                var my_gradient = ctx.createLinearGradient(0, 0, 0, 170);
+                my_gradient.addColorStop(0, "red");
+                my_gradient.addColorStop(1, "yellow");
+                ctx.fillStyle = my_gradient;
+                bars = 100;
+                for (var i = 0; i < bars; i++) {
+                    bar_x = i * 3;
+                    bar_width = 2;
+                    bar_height = -(fbc_array[i] / 2);
+
+                    ctx.fillRect(bar_x, canvas.height, bar_width, bar_height);
+                }
+            }
+            $("img#disco1").toggle(function() {
+                $(this).addClass("rotar").removeClass("parar");
+                audio.play();
+
+            }, function() {
+                $(this).removeClass("rotar").addClass("parar");
+                audio.pause();
+
+            });
+        });
+         //Disco 2
+        $(document).ready(function() {
+            var audio = document.getElementById("naranja");
+            $("img#disco2").toggle(function() {
+                $(this).addClass("rotar").removeClass("parar");
+                audio.play();
+            }, function() {
+                $(this).removeClass("rotar").addClass("parar");
+                audio.pause();
+            });
+        });
+         //Disco 3
+        $(document).ready(function() {
+            var audio = document.getElementById("batman");
+            $("img#disco3").toggle(function() {
+                $(this).addClass("rotar").removeClass("parar");
+                audio.play();
+            }, function() {
+                $(this).removeClass("rotar").addClass("parar");
+                audio.pause();
+            });
+        });
+         //Disco 4
+        $(document).ready(function() {
+            var audio = document.getElementById("odisea");
+            $("img#disco4").toggle(function() {
+                $(this).addClass("rotar").removeClass("parar");
+                audio.play();
+            }, function() {
+                $(this).removeClass("rotar").addClass("parar");
+                audio.pause();
+            });
+        });
+    </script>
+
+    <script>
+        //Secciones aparecen y desaparecen cuando clicas en ellas
+        $(function() {
+            $("nav").hide();
+            $("#hazclick").click(function(event) {
+                event.preventDefault;
+                if (event.which == 1) {
+                    $("nav").toggle();
+                    $("nav").css({
+                        "left": event.pageX,
+                        "top": event.pageY
+                    })
+                }
+            });
+        });
+
+        $(function() {
+            $("nav").hide();
+            $("input#buscador").click(function(event) {
+                event.preventDefault;
+                if (event.which == 1) {
+                    $("nav").toggle();
+                    $("nav").css({
+                        "left": event.pageX,
+                        "top": event.pageY
+                    })
+                }
+            });
+        });
+    </script>
+
+    <script>
+        //Buscador (es para la sección de catálogo, que no me ha dado tiempo a añadir); creo que con listado, hubiera sido más sencillo. Cuando la probé (poniendo los valores exactos), funcionaba
+        $(function() {
+
+            $("input[value='Buscar']").click(function() {
+
+                $("span.obra p").each(function(index) {
+
+                    var valor = $("input[type='text']").val();
+
+                    if ($(this).text() == valor) {
+                        $("span.obra").removeClass("resaltar");
+                        $(this).parent().addClass("resaltar");
+                    }
+
+                });
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

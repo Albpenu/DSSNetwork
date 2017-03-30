@@ -1,0 +1,721 @@
+* {
+    box-sizing: border-box;
+}
+/*Fuente de texto elegida*/
+
+@font-face {
+    font-family: 'tinta';
+    src: url('../fonts/tinta.ttf') format('truetype');
+}
+/* Por debajo de 962px en pantalla en formato apaisado*/
+
+@media screen and (max-width: 962px) and (orientation: landscape) {
+    p {
+        font-size: 40px;
+    }
+}
+/* Por debajo de 965px en pantalla en formato retrato*/
+
+@media screen and (max-width: 965px) and (orientation: portrait) {
+    p {
+        font-size: 40px;
+    }
+}
+body {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-family: 'tinta';
+    color: black;
+    background: url("../rsc/img/logo/stainedpaper7.jpg") no-repeat center;
+    background-size: cover;
+}
+#logo img {
+    padding-top: 5%;
+    width: 100%;
+    position: relative;
+}
+nav {
+    position: absolute;
+    z-index: 10;
+}
+#uno {
+    margin-right: -450px;
+    width: 150px;
+    height: 80px;
+    position: relative;
+    margin-top: 50px;
+    //-webkit-animation: 2s bote infinite;
+
+}
+#dos {
+    margin-right: -450px;
+    width: 150px;
+    height: 80px;
+    position: relative;
+    margin-top: 150px;
+    //-webkit-animation: 2s bote infinite;
+
+}
+#tres {
+    margin-right: -450px;
+    width: 150px;
+    height: 80px;
+    position: relative;
+    margin-top: 250px;
+    //-webkit-animation: 2s bote infinite;
+
+}
+#cuatro {
+    margin-right: -450px;
+    width: 150px;
+    height: 80px;
+    position: relative;
+    margin-top: 350px;
+    //-webkit-animation: 2s bote infinite;
+
+}
+//@-webkit-keyframes bote {
+ 20%,
+50%,
+80% {
+    -webkit-transform: translateY(0);
+}
+40% {
+    -webkit-transform: translateY(-85px);
+}
+65% {
+    -webkit-transform: translateY(-35px);
+}
+}
+div.texto {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    margin-top: 100px;
+}
+#texto1 {
+    font-size: 100px;
+    height: 100px;
+}
+.imagen {
+    height: 100px;
+    width: 150px;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+div.padre {
+    height: 108px;
+    position: relative;
+    border-top: 4px solid black;
+    border-bottom: 1px solid black;
+    transition: 1s;
+}
+div.secciones {
+    margin-right: 0px;
+    z-index: 1;
+    float: right;
+    height: 80px;
+    position: relative;
+}
+a#secciones {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 10;
+    font-size: 60px;
+    color: black;
+    right: 120px;
+}
+a#secciones:hover {
+    top: 0px;
+    margin-top: -6px;
+    position: fixed;
+    z-index: 10;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+a#secciones:focus {
+    top: 0px;
+    margin-top: -6px;
+    position: fixed;
+    z-index: 10;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+div#padre11:hover {
+    height: 108px;
+    position: relative;
+    border-top: 4px solid black;
+    border-bottom: 1px solid black;
+    background: url("../rsc/img/teclas/tecla1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.focus11 {
+    height: 108px;
+    position: relative;
+    border-top: 4px solid black;
+    border-bottom: 1px solid black;
+    background: url("../rsc/img/teclas/tecla1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+div#padre22:hover {
+    height: 108px;
+    position: relative;
+    border-top: 4px solid black;
+    border-bottom: 1px solid black;
+    background: url("../rsc/img/teclas/tecla2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.focus22 {
+    height: 108px;
+    position: relative;
+    border-top: 4px solid black;
+    border-bottom: 1px solid black;
+    background: url("../rsc/img/teclas/tecla2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+div#padre33:hover {
+    height: 108px;
+    position: relative;
+    border-top: 4px solid black;
+    border-bottom: 1px solid black;
+    background: url("../rsc/img/teclas/tecla3.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.focus33 {
+    height: 108px;
+    position: relative;
+    border-top: 4px solid black;
+    border-bottom: 1px solid black;
+    background: url("../rsc/img/teclas/tecla3.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+div#padre44:hover {
+    height: 108px;
+    position: relative;
+    border-bottom: 4px solid black;
+    background: url("../rsc/img/teclas/tecla4.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.focus44 {
+    height: 108px;
+    position: relative;
+    border-bottom: 4px solid black;
+    background: url("../rsc/img/teclas/tecla4.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+div#padre44 {
+    border-bottom: 4px solid black;
+}
+
+#canvas {
+ float:left;
+ position:absolute;
+
+}
+
+canvas {
+ margin-top:-20px;
+ margin-bottom:auto;
+ top:0;
+ bottom:0;
+
+}
+span.obra {
+    height:80px;
+    display:inline;
+    float:left;
+    font-size:60px;
+    line-height:45px;
+    left:0;
+    position:absolute;
+}
+span#obra2 {
+    display:inline;
+    float:left;
+    font-size:60px;
+    left:0;
+    position:absolute;
+}
+span#obra3 {
+    display:inline;
+    float:left;
+    font-size:60px;
+    left:0;
+    position:absolute;
+}
+.hijo {
+    width:150px;
+    height:60px;
+    left:0;
+    right:0;
+    margin:0px auto;
+    position:absolute;
+}
+.option {
+    text-decoration:none;
+    transition:1s;
+    color:black;
+    height:80px;
+    width:150px;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    border-left:20px solid black;
+    border-right:20px solid black;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    -webkit-animation:2s bote infinite;
+    -webkit-animation:2s fondo infinite;
+}
+img.disco {
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    width:400px;
+    height:400px;
+    cursor:pointer;
+    margin:0px auto;
+    position:relative;
+    float:left;
+    box-shadow:10px 10px 5px black;
+}
+a#galeria1 {
+    color:white;
+}
+a#galeria1:hover {
+    text-decoration:none;
+    color:black;
+    border-bottom-left-radius:100%;
+    border-bottom-right-radius:100%;
+    background:url("../rsc/img/logo/stainedpaper7.jpg") no-repeat center;
+    background-size:cover;
+}
+a#galeria1:focus {
+    text-decoration:none;
+    color:black;
+    border-bottom-left-radius:100%;
+    border-bottom-right-radius:100%;
+    background:url("../rsc/img/logo/stainedpaper7.jpg") no-repeat center;
+    background-size:cover;
+}
+img#disco1 {
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    width:400px;
+    height:400px;
+    cursor:pointer;
+    margin:0px auto;
+    position:relative;
+    float:left;
+    box-shadow:10px 10px 5px black;
+}
+.rotar {
+    width:400px;
+    height:400px;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    -webkit-animation:10s rotar linear infinite;
+    animation:10s rotar linear infinite;
+    -webkit-animation-play-state:running;
+    animation-play-state:running,
+    paused;
+}
+@keyframes rotar {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+@-webkit-keyframes rotar {
+    0% {
+        -webkit-transform:rotate(0deg);
+    }
+    100% {
+        -webkit-transform:rotate(360deg);
+    }
+}
+.parar {
+    width:400px;
+    height:400px;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    -webkit-animation:10s rotar linear infinite;
+    animation:10s rotar linear infinite;
+    -webkit-animation-play-state:paused;
+    animation-play-state:paused;
+}
+div#desplegable1 {
+    width:100%;
+    height:400px;
+    margin:0px auto;
+    position:relative;
+    background:url("../rsc/img/bandas-sonoras/10.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+div#desplegable2 {
+    width:100%;
+    height:400px;
+    margin:0px auto;
+    position:relative;
+    background:url("../rsc/img/bandas-sonoras/tc3a9cnicas-de-manipulacic3b3n-mental-de-masas-3.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+div#desplegable3 {
+    width:100%;
+    height:400px;
+    margin:0px auto;
+    position:relative;
+    background:url("../rsc/img/bandas-sonoras/5.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+div#desplegable4 {
+    width:100%;
+    height:400px;
+    margin:0px auto;
+    position:relative;
+    background:url("../rsc/img/bandas-sonoras/2.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+div.desplegable {
+    width:100%;
+    height:400px;
+    margin:0px auto;
+    position:relative;
+}
+div.desplegable img {
+    width:400px;
+    height:400px;
+    margin:0px auto;
+    position:relative;
+}
+div img.flechaabajo {
+    height:100px;
+    width:73px;
+    float:right;
+}
+div img.flechaarriba {
+    height:100px;
+    width:73px;
+    float:right;
+}
+div#contenedor {
+    width:800px;
+    position:relative;
+    margin:0px auto;
+}
+div.imagen {
+    margin:20px auto;
+    width:600px;
+    position:relative;
+    cursor:pointer;
+}
+div.imagen img {
+    width:600px;
+    position:absolute;
+}
+div.flechas {
+    padding-top:35%;
+    width:100px;
+    height:100px;
+}
+div.flechas img {
+    width:100px;
+    cursor:pointer;
+}
+div#flechadrch {
+    right:0px;
+    position:absolute;
+    top:50%;
+}
+div#flechaizq {
+    left:0px;
+    position:absolute;
+    top:50%;
+}
+.modal-content {
+    width:800px;
+    !important position:relative;
+    !important margin:0px auto;
+    !important height:100%;
+    !important
+}
+iframe {
+    width:100%;
+    height:650px;
+    overflow-y:hidden;
+}
+#login-modal .modal-dialog {
+    width:350px;
+}
+#login-modal input[type=text],
+input[type=password] {
+    margin-top:10px;
+}
+#div-login-msg,
+#div-lost-msg,
+#div-register-msg {
+    border:1px solid #dadfe1;
+    height:30px;
+    line-height:28px;
+    transition:all ease-in-out 500ms;
+}
+#div-login-msg.success,
+#div-lost-msg.success,
+#div-register-msg.success {
+    border:1px solid #68c3a3;
+    background-color:#c8f7c5;
+}
+#div-login-msg.error,
+#div-lost-msg.error,
+#div-register-msg.error {
+    border:1px solid #eb575b;
+    background-color:#ffcad1;
+}
+#icon-login-msg,
+#icon-lost-msg,
+#icon-register-msg {
+    width:30px;
+    float:left;
+    line-height:28px;
+    text-align:center;
+    background-color:#dadfe1;
+    margin-right:5px;
+    transition:all ease-in-out 500ms;
+}
+#icon-login-msg.success,
+#icon-lost-msg.success,
+#icon-register-msg.success {
+    background-color:#68c3a3 !important;
+}
+#icon-login-msg.error,
+#icon-lost-msg.error,
+#icon-register-msg.error {
+    background-color:#eb575b !important;
+}
+#img_logo {
+    max-height:100px;
+    max-width:100px;
+}
+.modal-backdrop.in {
+    filter:alpha(opacity=50);
+    opacity:.8;
+}
+.modal-content {
+    background-color:#ececec;
+    border:1px solid #bdc3c7;
+    border-radius:0px;
+    outline:0;
+}
+.modal-header {
+    min-height:16.43px;
+    padding:15px 15px 15px 15px;
+    border-bottom:0px;
+}
+.modal-body {
+    position:relative;
+    padding:5px 15px 5px 15px;
+}
+.modal-footer {
+    padding:15px 15px 15px 15px;
+    text-align:left;
+    border-top:0px;
+}
+.checkbox {
+    margin-bottom:0px;
+}
+#textoseccion1 {
+    background-color:white;
+    width:150px;
+    height:80px;
+    top:-80px;
+    position:relative;
+    display:block;
+    text-align:center;
+    vertical-align:middle;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    font-size:60px;
+    z-index:-10;
+}
+#textoseccion2 {
+    background-color:white;
+    width:150px;
+    height:80px;
+    top:-80px;
+    position:relative;
+    display:block;
+    text-align:center;
+    vertical-align:middle;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    font-size:50px;
+    z-index:-10;
+}
+#textoseccion3 {
+    background-color:white;
+    width:150px;
+    height:80px;
+    top:-80px;
+    position:relative;
+    display:block;
+    text-align:center;
+    vertical-align:middle;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    font-size:55px;
+    z-index:-10;
+}
+#textoseccion4 {
+    background-color:white;
+    width:150px;
+    height:80px;
+    top:-80px;
+    padding-right:5px;
+    padding-top:5px;
+    position:relative;
+    display:block;
+    text-align:center;
+    vertical-align:middle;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:100%;
+    border-top-left-radius:100%;
+    border-bottom-left-radius:100%;
+    font-size:40px;
+    z-index:-10;
+}
+body.modal-open div.modal-backdrop {
+    z-index:0;
+}
+div.modal-content {
+    background:url("../rsc/img/logo/stainedpaper7.jpg") no-repeat center;
+    background-size:cover;
+}
+.mancha {
+    -webkit-animation:2s toggle infinite;
+}
+@-webkit-keyframes toggle {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+#comu {
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+#audio_box {
+    display:none;
+}
+/*div#mp3_player > canvas { 
+    width:500px; 
+    height:30px; 
+    margin-top: 0px;
+    position: absolute;
+    transform: rotate(180deg);
+}*/
+
+div#mp3_player > canvas {
+    width:800px;
+    height:30px;
+    margin-top:370px;
+    position:absolute;
+}
+footer {
+    margin-top:20px;
+    float:left;
+    width:100%;
+}
+.pie {
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    font-size:60px;
+    border-bottom-left-radius:100%;
+    border-bottom-right-radius:100%;
+}
+label {
+    font-size:45px;
+    position:relative;
+}
+label:hover {
+    font-size:45px;
+    background-color:white;
+    position:relative;
+}
+
+.resaltar{
+    color: #F3AA04;
+    background-color: #FFFF96;
+}
+
+input[value='Buscar'] {
+    color: white;
+    background-color: black;
+}
+
+.btn btn-link{
+    background-color: white; !important 
+    color: black; !important 
+}
+
+#hazclick:hover {
+    border: 2px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    cursor: pointer;
+}

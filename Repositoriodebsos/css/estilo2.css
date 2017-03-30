@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'tinta';
+    src: url('../fonts/tinta.ttf') format('truetype');
+}
+h1 {
+    text-align: center;
+    font-family: 'tinta';
+    background: url("../rsc/img/logo/stainedpaper7.jpg") no-repeat center;
+    font-size: 50px;
+    color: black;
+}
+
+.ui-page, .ui-body-c, .ui-page-active, .ui-overlay-c, .ui-mobile-viewport
+{
+    background-color: transparent !important;
+    overflow-y: hidden !important;
+}
+
+body, .ui-overlay-c {
+    background: url("../rsc/img/bandas-sonoras/inception-movie-37018.jpg") no-repeat !important;
+    background-size: cover !important;
+    overflow-y: hidden !important;
+}
+div#contenedor {
+    width: 800px;
+    position: relative;
+    margin: 0px auto;
+}
+div.imagen {
+    margin: 20px auto;
+    width: 600px;
+    position: relative;
+    cursor: pointer;
+}
+div.imagen img {
+    width: 600px;
+    position: absolute;
+}
+div.flechas {
+    padding-top: 35%;
+    width: 100px;
+    height: 100px;
+}
+div.flechas img {
+    width: 100px;
+    cursor: pointer;
+}
+div#flechadrch {
+    right: 0px;
+    position: absolute;
+    top: 50%;
+}
+div#flechaizq {
+    left: 0px;
+    position: absolute;
+    top: 50%;
+}
